@@ -23,403 +23,620 @@
 </head>
 
 <body>
+
   <header>
-    <ul>
-      <li onclick="mostrarVista('ejercicio1')">Ejercicio 1</li>
-      <li onclick="mostrarVista('ejercicio2')">Ejercicio 2</li>
-      <li onclick="mostrarVista('ejercicio3')">Ejercicio 3</li>
-      <li onclick="mostrarVista('ejercicio4')">Ejercicio 4</li>
-      <li onclick="mostrarVista('ejercicio5')">Ejercicio 5</li>
-      <li onclick="mostrarVista('ejercicio6')">Ejercicio 6</li>
-      <li onclick="mostrarVista('ejercicio7')">Ejercicio 7</li>
-      <li onclick="mostrarVista('ejercicio8')">Ejercicio 8</li>
-      <li onclick="mostrarVista('ejercicio9')">Ejercicio 9</li>
-      <li onclick="mostrarVista('ejercicio10')">Ejercicio 10</li>
-      <li onclick="mostrarVista('ejercicio11')">Ejercicio 11</li>
-      <li onclick="mostrarVista('ejercicio12')">Ejercicio 12</li>
-      <li onclick="mostrarVista('ejercicio13')">Ejercicio 13</li>
-      <li onclick="mostrarVista('ejercicio14')">Ejercicio 14</li>
-      <li onclick="mostrarVista('ejercicio15')">Ejercicio 15</li>
-      <li onclick="mostrarVista('ejercicio16')">Ejercicio 16</li>
-      <li onclick="mostrarVista('ejercicio17')">Ejercicio 17</li>
-      <li onclick="mostrarVista('ejercicio18')">Ejercicio 18</li>
-    </ul>
+    <div class="bg-dark collapse" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Ejercicios</h4>
+            <ul class="list-unstyled">
+              <li onclick="mostrarVista('ejercicio1')" class="text-white"><a href="#" class="text-white">Ejercicio 1</a></li>
+              <li onclick="mostrarVista('ejercicio2')"><a href="#" class="text-white">Ejercicio 2</a></li>
+              <li onclick="mostrarVista('ejercicio3')"><a href="#" class="text-white">Ejercicio 3</a></li>
+              <li onclick="mostrarVista('ejercicio4')"><a href="#" class="text-white">Ejercicio 4</a></li>
+              <li onclick="mostrarVista('ejercicio5')"><a href="#" class="text-white">Ejercicio 5</a></li>
+              <li onclick="mostrarVista('ejercicio6')"><a href="#" class="text-white">Ejercicio 6</a></li>
+              <li onclick="mostrarVista('ejercicio7')"><a href="#" class="text-white">Ejercicio 7</a></li>
+              <li onclick="mostrarVista('ejercicio8')"><a href="#" class="text-white">Ejercicio 8</a></li>
+              <li onclick="mostrarVista('ejercicio9')"><a href="#" class="text-white">Ejercicio 9</a></li>
+              <li onclick="mostrarVista('ejercicio10')"><a href="#" class="text-white">Ejercicio 10</a></li>
+              <li onclick="mostrarVista('ejercicio11')"><a href="#" class="text-white">Ejercicio 11</a></li>
+              <li onclick="mostrarVista('ejercicio12')"><a href="#" class="text-white">Ejercicio 12</a></li>
+              <li onclick="mostrarVista('ejercicio13')"><a href="#" class="text-white">Ejercicio 13</a></li>
+              <li onclick="mostrarVista('ejercicio14')"><a href="#" class="text-white">Ejercicio 14</a></li>
+              <li onclick="mostrarVista('ejercicio15')"><a href="#" class="text-white">Ejercicio 15</a></li>
+              <li onclick="mostrarVista('ejercicio16')"><a href="#" class="text-white">Ejercicio 16</a></li>
+              <li onclick="mostrarVista('ejercicio17')"><a href="#" class="text-white">Ejercicio 17</a></li>
+              <li onclick="mostrarVista('ejercicio18')"><a href="#" class="text-white">Ejercicio 18</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <span style="font-size: 30px; margin-right: 5px;" class="t">
+            <em class="fas fa-rocket"></em>
+          </span>
+          <strong>Bootcamp Carrera Fullstack </strong>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
   </header>
-  <section class="container" id="ejercicio1">
-    <div class="grid">
-      <div class="row">
-        <label for="p1">Calificación 1</label>
-        <input type="tel" name="" id="e1_p1" oninput="calcularPromedio()">
+
+
+
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Reto 2 y 3. Ing. Wilian Pantoja</h5>
+  </div>
+
+  <div class="container">
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio1">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 1</h4>
       </div>
-      <div class="row">
-        <label for="p2">Calificación 2</label>
-        <input type="tel" name="" id="e1_p2" oninput="calcularPromedio()">
-      </div>
-      <div class="row">
-        <label for="p3">Calificación 3</label>
-        <input type="tel" name="" id="e1_p3" oninput="calcularPromedio()">
-      </div>
-      <div class="row">
-        <label for="p4">Calificación 4</label>
-        <input type="tel" name="" id="e1_p4" oninput="calcularPromedio()">
-      </div>
-      <div class="row">
-        Resultado:
-        <span id="e1_promedio" class="success"></span>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="p1">Calificación 1</label>
+              <input class="form-control" class="form-control" type="tel" name="" id="e1_p1" oninput="calcularPromedio()">
+            </div>
+            <div class="row">
+              <label for="p2">Calificación 2</label>
+              <input class="form-control" type="tel" name="" id="e1_p2" oninput="calcularPromedio()">
+            </div>
+            <div class="row">
+              <label for="p3">Calificación 3</label>
+              <input class="form-control" type="tel" name="" id="e1_p3" oninput="calcularPromedio()">
+            </div>
+            <div class="row">
+              <label for="p4">Calificación 4</label>
+              <input class="form-control" type="tel" name="" id="e1_p4" oninput="calcularPromedio()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados </span>
+                <span id="e1_promedio" class="success mx-3"></span>
+              </h4>
+
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-  <section class="container" id="ejercicio2">
-    <div class="grid">
-      <div class="row">
-        <label for="e2_m1">Masa (g) cuerpo 1</label>
-        <input type="number" name="" id="e2_m1" oninput="calcularFuerzaGravitacional()">
+    <div class="card mb-4 box-shadow collapse" id="ejercicio2">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 2</h4>
       </div>
-      <div class="row">
-        <label for="e2_m2">Masa (g) cuerpo 2</label>
-        <input type="number" name="" id="e2_m2" oninput="calcularFuerzaGravitacional()">
-      </div>
-      <div class="row">
-        <label for="e2_m2">Distancia (m)</label>
-        <input type="number" name="" id="e2_d" oninput="calcularFuerzaGravitacional()">
-      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e2_m1">Masa (g) cuerpo 1</label>
+              <input class="form-control" type="number" name="" id="e2_m1" oninput="calcularFuerzaGravitacional()">
+            </div>
+            <div class="row">
+              <label for="e2_m2">Masa (g) cuerpo 2</label>
+              <input class="form-control" type="number" name="" id="e2_m2" oninput="calcularFuerzaGravitacional()">
+            </div>
+            <div class="row">
+              <label for="e2_m2">Distancia (m)</label>
+              <input class="form-control" type="number" name="" id="e2_d" oninput="calcularFuerzaGravitacional()">
+            </div>
 
-      <div class="row">
-        Resultado:
-        <span id="e2_resultado" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e2_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-
-  <section class="container" id="ejercicio3">
-    <div class="grid">
-      <div class="row">
-        <label for="e3_m">Masa (g)</label>
-        <input type="number" name="" id="e3_m" oninput="calcularEnergia()">
+    <div class="card mb-4 box-shadow collapse" id="ejercicio3">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 3</h4>
       </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e3_m">Masa (g)</label>
+              <input class="form-control" type="number" name="" id="e3_m" oninput="calcularEnergia()">
+            </div>
 
-      <div class="row">
-        Resultado:
-        <span id="e3_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio4">
-    <div class="grid">
-      <div class="row">
-        <label for="e4_a">Lado a</label>
-        <input type="number" name="" id="e4_a" oninput="calcularHipotenusa()">
-      </div>
-      <div class="row">
-        <label for="e4_b">Lado b</label>
-        <input type="number" name="" id="e4_b" oninput="calcularHipotenusa()">
-      </div>
-
-      <div class="row">
-        Hipotenusa:
-        <span id="e4_resultado" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e3_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-
-  <section class="container" id="ejercicio5">
-    <div class="grid">
-      <div class="row">
-        <label for="e5_a">Lado a</label>
-        <input type="number" name="" id="e5_a" oninput="calcularArea()">
+    <div class="card mb-4 box-shadow collapse" id="ejercicio4">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 4</h4>
       </div>
-      <div class="row">
-        <label for="e5_b">Lado b</label>
-        <input type="number" name="" id="e5_b" oninput="calcularArea()">
-      </div>
-      <div class="row">
-        <label for="e5_c">Lado c</label>
-        <input type="number" name="" id="e5_c" oninput="calcularArea()">
-      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e4_a">Lado a</label>
+              <input class="form-control" type="number" name="" id="e4_a" oninput="calcularHipotenusa()">
+            </div>
+            <div class="row">
+              <label for="e4_b">Lado b</label>
+              <input class="form-control" type="number" name="" id="e4_b" oninput="calcularHipotenusa()">
+            </div>
 
-      <div class="row">
-        Area:
-        <span id="e5_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio6">
-    <div class="grid">
-      <div class="row">
-        <label for="e3_fecha">Hora en formato 24HH</label>
-        <input type="text" name="" id="e6_fecha" oninput="convertirFormato12()">
-      </div>
-
-      <div class="row">
-        Resultado:
-        <span id="e6_resultado" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Hipotenusa</span>
+                <span id="e4_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-
-  <section class="container" id="ejercicio7">
-    <div class="grid">
-      <div class="row">
-        <label for="e7_m">Fecha (dia, mes año)</label>
-        <input type="text" name="" id="e7_fecha" oninput="convertirFormatoFecha()">
+    <div class="card mb-4 box-shadow collapse" id="ejercicio5">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 5</h4>
       </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e5_a">Lado a</label>
+              <input class="form-control" type="number" name="" id="e5_a" oninput="calcularArea()">
+            </div>
+            <div class="row">
+              <label for="e5_b">Lado b</label>
+              <input class="form-control" type="number" name="" id="e5_b" oninput="calcularArea()">
+            </div>
+            <div class="row">
+              <label for="e5_c">Lado c</label>
+              <input class="form-control" type="number" name="" id="e5_c" oninput="calcularArea()">
+            </div>
 
-      <div class="row">
-        Resultado:
-        <span id="e7_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio8">
-    <div class="grid">
-      <div class="row">
-        <label for="e8_numeroEnLetras">Numero en letras</label>
-        <input type="text" name="" id="e8_numeroEnLetras" oninput="convertirLetrasANumeros()">
-      </div>
-
-      <div class="row">
-        Resultado:
-        <span id="e8_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio9">
-    <div class="grid">
-      <div class="row">
-        <label for="e9_radio">Radio</label>
-        <input type="text" name="" id="e9_radio" oninput="calcularCirculo()">
-      </div>
-
-      <div class="row">
-        Circunferencia: <span id="e9_circunferencia" class="success"></span>
-      </div>
-      <div class="row">
-        Área: <span id="e9_area" class="success"></span>
-      </div>
-      <div class="row">
-        Diámetro: <span id="e9_diametro" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Área</span>
+                <span id="e5_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-
-  <section class="container" id="ejercicio10">
-    <div class="grid">
-      <div class="row">
-        <label for="e10_numero">Número Arábigo</label>
-        <input type="number" name="" id="e10_numero" oninput="convertirArabigoARomano()">
+    <div class="card mb-4 box-shadow collapse" id="ejercicio6">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 6</h4>
       </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e3_fecha">Hora en formato 24HH</label>
+              <input class="form-control" type="text" name="" id="e6_fecha" oninput="convertirFormato12()">
+            </div>
 
-      <div class="row">
-        Resultado: <span id="e10_resultado" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e6_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-
-  <section class="container" id="ejercicio11">
-    <div class="grid">
-      <div class="row">
-        <label for="e11_numero">Número de 4 dígitos</label>
-        <input type="number" name="" id="e11_numero" oninput="redondearCentenas()">
+    <div class="card mb-4 box-shadow collapse" id="ejercicio7">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 7</h4>
       </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e7_m">Fecha (dia, mes año)</label>
+              <input class="form-control" type="text" name="" id="e7_fecha" oninput="convertirFormatoFecha()">
+            </div>
 
-      <div class="row">
-        Resultado: <span id="e11_resultado" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e7_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-
-  <section class="container" id="ejercicio12">
-    <div class="grid">
-      <div class="row">
-        <label for="e12_archivo">Número de 4 dígitos</label>
-        <input type='file' accept='text/plain' id="e12_archivo" onchange='abrirArchivoFecha(event)'>
+    <div class="card mb-4 box-shadow collapse" id="ejercicio8">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 8</h4>
       </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e8_numeroEnLetras">Numero en letras</label>
+              <input class="form-control" type="text" name="" id="e8_numeroEnLetras" oninput="convertirLetrasANumeros()">
+            </div>
 
-      <div class="row">
-        Datos cargados: <textarea id="e12_cargado" class="success"></textarea>
-      </div>
-      <div class="row">
-        Resultado: <span id="e12_resultado" class="success"></span>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e8_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio9">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 9</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e9_radio">Radio</label>
+              <input class="form-control" type="text" name="" id="e9_radio" oninput="calcularCirculo()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+              </h4>
+            </div>
+            <div class="row">
+              Circunferencia: <span id="e9_circunferencia" class="success mx-3 "></span>
+            </div>
+            <div class="row">
+              Área: <span id="e9_area" class="success mx-3 "></span>
+            </div>
+            <div class="row">
+              Diámetro: <span id="e9_diametro" class="success mx-3 "></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio10">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 10</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e10_numero">Número Arábigo</label>
+              <input class="form-control" type="number" name="" id="e10_numero" oninput="convertirArabigoARomano()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e10_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio11">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 11</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e11_numero">Número de 4 dígitos</label>
+              <input class="form-control" type="number" name="" id="e11_numero" oninput="redondearCentenas()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e11_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio12">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 12</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e12_archivo">Número de 4 dígitos</label>
+              <input class="form-control" type='file' accept='text/plain' id="e12_archivo" onchange='abrirArchivoFecha(event)'>
+            </div>
 
 
-  <section class="container" id="ejercicio13">
-    <div class="grid">
-      <div class="row">
-        <label for="e13_a">Coeficiente a</label>
-        <input type="number" name="" id="e13_a" oninput="calcularEcuacionLineal()">
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Datos cargados</span>
+              </h4> <textarea class="form-control" id="e12_cargado" class="success mx-3 "></textarea>
+            </div>
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e12_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="row">
-        <label for="e13_b">Coeficiente b</label>
-        <input type="number" name="" id="e13_b" oninput="calcularEcuacionLineal()">
-      </div>
-      <div class="row">
-        <label for="e13_c">Coeficiente c</label>
-        <input type="number" name="" id="e13_c" oninput="calcularEcuacionLineal()">
-      </div>
-      <div class="row">
-        <label for="e13_d">Coeficiente d</label>
-        <input type="number" name="" id="e13_d" oninput="calcularEcuacionLineal()">
-      </div>
-      <div class="row">
-        <label for="e13_e">Coeficiente e</label>
-        <input type="number" name="" id="e13_e" oninput="calcularEcuacionLineal()">
-      </div>
-      <div class="row">
-        <label for="e13_f">Coeficiente f</label>
-        <input type="number" name="" id="e13_f" oninput="calcularEcuacionLineal()">
-      </div>
+    </div>
 
-      <div id="e13_resultado_calculado">
-        <div class="row">
-          X =
-          <span id="e13_x" class="success"></span>
+    <div class="card mb-4 box-shadow collapse" id="ejercicio13">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 13</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e13_a">Coeficiente a</label>
+              <input class="form-control" type="number" name="" id="e13_a" oninput="calcularEcuacionLineal()">
+            </div>
+            <div class="row">
+              <label for="e13_b">Coeficiente b</label>
+              <input class="form-control" type="number" name="" id="e13_b" oninput="calcularEcuacionLineal()">
+            </div>
+            <div class="row">
+              <label for="e13_c">Coeficiente c</label>
+              <input class="form-control" type="number" name="" id="e13_c" oninput="calcularEcuacionLineal()">
+            </div>
+            <div class="row">
+              <label for="e13_d">Coeficiente d</label>
+              <input class="form-control" type="number" name="" id="e13_d" oninput="calcularEcuacionLineal()">
+            </div>
+            <div class="row">
+              <label for="e13_e">Coeficiente e</label>
+              <input class="form-control" type="number" name="" id="e13_e" oninput="calcularEcuacionLineal()">
+            </div>
+            <div class="row">
+              <label for="e13_f">Coeficiente f</label>
+              <input class="form-control" type="number" name="" id="e13_f" oninput="calcularEcuacionLineal()">
+            </div>
+
+            <div id="e13_resultado_calculado">
+              <div class="row">
+                <h4 class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-muted">Resultados</span>
+                </h4>
+              </div>
+              <div class="row">
+                X =
+                <span id="e13_x" class="success mx-3 "></span>
+              </div>
+              <div class="row">
+                Y =
+                <span id="e13_y" class="success mx-3 "></span>
+              </div>
+            </div>
+            <div class="row oculto">
+              <span id="e13_resultado" class="success mx-3 "></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio14">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 14</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e14_fecha">Seleccione un año</label>
+              <input class="form-control" type="month" name="" id="e14_fecha" onchange="calcularBisiesto()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e14_resultado" class="success mx-3 "></span>
+              </h4>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio15">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 15</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e15_fecha">Seleccione un mes</label>
+              <input class="form-control" type="month" name="" id="e15_fecha" onchange="calcularNumeroDias()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Número de días</span>
+                <span id="e15_resultado" class="success mx-3 "></span>
+              </h4>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio16">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 16</h4>
+      </div>
+      <div class="card-body">
+        <section class="container activo" >
+          <div class="grid">
+            <div class="row">
+              <label for="e16_tasa">Tasa</label>
+              <input class="form-control" type="number" name="" id="e16_tasa" oninput="calcularSalario()">
+            </div>
+            <div class="row">
+              <label for="e16_horas">Número de horas</label>
+              <input class="form-control" type="number" name="" id="e16_horas" oninput="calcularSalario()">
+            </div>
+            <div class="row">
+              <label for="e16_horas_extra">Número de horas extra</label>
+              <input class="form-control" type="number" name="" id="e16_horas_extra" oninput="calcularSalario()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+              </h4>
+            </div>
+            <div class="row">
+              Impuesto: <span id="e16_impuesto" class="success mx-3 "></span>
+            </div>
+            <div class="row">
+              Salario semanal: <span id="e16_salario" class="success mx-3 "></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio17">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 17</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e17_cantidad">Cantidad</label>
+              <input class="form-control" type="number" name="" id="e17_cantidad" oninput="calcularOptimoBilletesMonedas()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+              </h4>
+            </div>
+            <div class="grid">
+              <div class="row">
+
+                <div class="col">
+                  <div class="row">
+                    Billetes de $ 100.000 <span id="e17_100000" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Billetes de $ 50.000 <span id="e17_50000" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Billetes de $ 20.000 <span id="e17_20000" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Billetes de $ 10.000 <span id="e17_10000" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Billetes de $ 5.000 <span id="e17_5000" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Billetes de $ 2.000 <span id="e17_2000" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Billetes o monedas de $ 1.000 <span id="e17_1000" class="success mx-3 "></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    Monedas de $ 500 <span id="e17_500" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Monedas de $ 200 <span id="e17_200" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Monedas de $ 100 <span id="e17_100" class="success mx-3 "></span>
+                  </div>
+                  <div class="row">
+                    Monedas de $ 50 <span id="e17_50" class="success mx-3 "></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow collapse" id="ejercicio18">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ejercicio 18</h4>
+      </div>
+      <div class="card-body">
+        <section class="container" >
+          <div class="grid">
+            <div class="row">
+              <label for="e18_numero">Número:</label>
+              <input class="form-control" type="number" name="" id="e18_numero" oninput="verificarNumero()">
+            </div>
+
+            <div class="row">
+              <h4 class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Resultados</span>
+                <span id="e18_resultado" class="success mx-3 "></span>
+              </h4>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <small class="d-block mb-3 text-muted">Wilian Pantoja ©</small>
         </div>
-        <div class="row">
-          Y =
-          <span id="e13_y" class="success"></span>
-        </div>
       </div>
-      <div class="row oculto">
-        <span id="e13_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio14">
-    <div class="grid">
-      <div class="row">
-        <label for="e14_fecha">Seleccione un año</label>
-        <input type="month" name="" id="e14_fecha" onchange="calcularBisiesto()">
-      </div>
-
-      <div class="row">
-        Resultado: <span id="e14_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio15">
-    <div class="grid">
-      <div class="row">
-        <label for="e15_fecha">Seleccione un mes</label>
-        <input type="month" name="" id="e15_fecha" onchange="calcularNumeroDias()">
-      </div>
-
-      <div class="row">
-        Número de días: <span id="e15_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container activo" id="ejercicio16">
-    <div class="grid">
-      <div class="row">
-        <label for="e16_tasa">Tasa</label>
-        <input type="number" name="" id="e16_tasa" oninput="calcularSalario()">
-      </div>
-      <div class="row">
-        <label for="e16_horas">Número de horas</label>
-        <input type="number" name="" id="e16_horas" oninput="calcularSalario()">
-      </div>
-      <div class="row">
-        <label for="e16_horas_extra">Número de horas extra</label>
-        <input type="number" name="" id="e16_horas_extra" oninput="calcularSalario()">
-      </div>
-
-      <div class="row">
-        Impuesto: <span id="e16_impuesto" class="success"></span>
-      </div>
-      <div class="row">
-        Salario semanal: <span id="e16_salario" class="success"></span>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="container" id="ejercicio17">
-    <div class="grid">
-      <div class="row">
-        <label for="e17_cantidad">Cantidad</label>
-        <input type="number" name="" id="e17_cantidad" oninput="calcularOptimoBilletesMonedas()">
-      </div>
-
-      <div class="grid">
-        <div class="row">
-          <div class="row">
-            Billetes de $ 100.000 <span id="e17_100000" class="success"></span>
-          </div>
-          <div class="row">
-            Billetes de $ 50.000 <span id="e17_50000" class="success"></span>
-          </div>
-          <div class="row">
-            Billetes de $ 20.000 <span id="e17_20000" class="success"></span>
-          </div>
-          <div class="row">
-            Billetes de $ 10.000 <span id="e17_10000" class="success"></span>
-          </div>
-          <div class="row">
-            Billetes de $ 5.000 <span id="e17_5000" class="success"></span>
-          </div>
-          <div class="row">
-            Billetes de $ 2.000 <span id="e17_2000" class="success"></span>
-          </div>
-          <div class="row">
-            Billetes o monedas de $ 1.000 <span id="e17_1000" class="success"></span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="row">
-            Monedas de $ 500 <span id="e17_500" class="success"></span>
-          </div>
-          <div class="row">
-            Monedas de $ 200 <span id="e17_200" class="success"></span>
-          </div>
-          <div class="row">
-            Monedas de $ 100 <span id="e17_100" class="success"></span>
-          </div>
-          <div class="row">
-            Monedas de $ 50 <span id="e17_50" class="success"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container" id="ejercicio18">
-    <div class="grid">
-      <div class="row">
-        <label for="e18_numero">Número:</label>
-        <input type="number" name="" id="e18_numero" oninput="verificarNumero()">
-      </div>
-
-      <div class="row">
-        Resultado: <span id="e18_resultado" class="success"></span>
-      </div>
-    </div>
-  </section>
+    </footer>
+  </div>
 
 
 </body>

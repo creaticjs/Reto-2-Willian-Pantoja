@@ -1,5 +1,12 @@
-function mostrarVista() {
-
+function mostrarVista(id) {
+  for (var i = 1; i <= 18; i++) {
+    $('#ejercicio'+i).collapse('hide');  
+  }
+  $('#'+id).collapse('show');
+  $('#navbarHeader').collapse({
+    toogle: true
+  });
+  $('.navbar-toggler').trigger( "click" );
 }
 
 function _e(id) {
