@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio 1</title>
+  <script src="numeros.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li onclick="mostrarVista('ejercicio1')">Ejercicio 1</li>
+      <li onclick="mostrarVista('ejercicio2')">Ejercicio 2</li>
+      <li onclick="mostrarVista('ejercicio3')">Ejercicio 3</li>
+      <li onclick="mostrarVista('ejercicio4')">Ejercicio 4</li>
+      <li onclick="mostrarVista('ejercicio5')">Ejercicio 5</li>
+      <li onclick="mostrarVista('ejercicio6')">Ejercicio 6</li>
+      <li onclick="mostrarVista('ejercicio7')">Ejercicio 7</li>
+      <li onclick="mostrarVista('ejercicio8')">Ejercicio 8</li>
+      <li onclick="mostrarVista('ejercicio9')">Ejercicio 9</li>
+      <li onclick="mostrarVista('ejercicio10')">Ejercicio 10</li>
+      <li onclick="mostrarVista('ejercicio11')">Ejercicio 11</li>
+      <li onclick="mostrarVista('ejercicio12')">Ejercicio 12</li>
+      <li onclick="mostrarVista('ejercicio13')">Ejercicio 13</li>
+      <li onclick="mostrarVista('ejercicio14')">Ejercicio 14</li>
+      <li onclick="mostrarVista('ejercicio15')">Ejercicio 15</li>
+      <li onclick="mostrarVista('ejercicio16')">Ejercicio 16</li>
+      <li onclick="mostrarVista('ejercicio17')">Ejercicio 17</li>
+      <li onclick="mostrarVista('ejercicio18')">Ejercicio 18</li>
+    </ul>
+  </header>
+  <section id="ejercicio1">
+    <div class="grid">
+      <div class="row">
+        <label for="p1">Calificación 1</label>
+        <input type="tel" name="" id="e1_p1" oninput="calcularPromedio()">
+      </div>
+      <div class="row">
+        <label for="p2">Calificación 2</label>
+        <input type="tel" name="" id="e1_p2" oninput="calcularPromedio()">
+      </div>
+      <div class="row">
+        <label for="p3">Calificación 3</label>
+        <input type="tel" name="" id="e1_p3" oninput="calcularPromedio()">
+      </div>
+      <div class="row">
+        <label for="p4">Calificación 4</label>
+        <input type="tel" name="" id="e1_p4" oninput="calcularPromedio()">
+      </div>
+      <div class="row">
+        Resultado:
+        <span id="e1_promedio" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="ejercicio2">
+    <div class="grid">
+      <div class="row">
+        <label for="e2_m1">Masa (g) cuerpo 1</label>
+        <input type="number" name="" id="e2_m1" oninput="calcularFuerzaGravitacional()">
+      </div>
+      <div class="row">
+        <label for="e2_m2">Masa (g) cuerpo 2</label>
+        <input type="number" name="" id="e2_m2" oninput="calcularFuerzaGravitacional()">
+      </div>
+      <div class="row">
+        <label for="e2_m2">Distancia (m)</label>
+        <input type="number" name="" id="e2_d" oninput="calcularFuerzaGravitacional()">
+      </div>
+
+      <div class="row">
+        Resultado:
+        <span id="e2_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio3">
+    <div class="grid">
+      <div class="row">
+        <label for="e3_m">Masa (g)</label>
+        <input type="number" name="" id="e3_m" oninput="calcularEnergia()">
+      </div>
+
+      <div class="row">
+        Resultado:
+        <span id="e3_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio4">
+    <div class="grid">
+      <div class="row">
+        <label for="e4_a">Lado a</label>
+        <input type="number" name="" id="e4_a" oninput="calcularHipotenusa()">
+      </div>
+      <div class="row">
+        <label for="e4_b">Lado b</label>
+        <input type="number" name="" id="e4_b" oninput="calcularHipotenusa()">
+      </div>
+
+      <div class="row">
+        Hipotenusa:
+        <span id="e4_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio5">
+    <div class="grid">
+      <div class="row">
+        <label for="e5_a">Lado a</label>
+        <input type="number" name="" id="e5_a" oninput="calcularArea()">
+      </div>
+      <div class="row">
+        <label for="e5_b">Lado b</label>
+        <input type="number" name="" id="e5_b" oninput="calcularArea()">
+      </div>
+      <div class="row">
+        <label for="e5_c">Lado c</label>
+        <input type="number" name="" id="e5_c" oninput="calcularArea()">
+      </div>
+
+      <div class="row">
+        Area:
+        <span id="e5_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio6">
+    <div class="grid">
+      <div class="row">
+        <label for="e3_fecha">Hora en formato 24HH</label>
+        <input type="text" name="" id="e6_fecha" oninput="convertirFormato12()">
+      </div>
+
+      <div class="row">
+        Resultado:
+        <span id="e6_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio7">
+    <div class="grid">
+      <div class="row">
+        <label for="e7_m">Fecha (dia, mes año)</label>
+        <input type="text" name="" id="e7_fecha" oninput="convertirFormatoFecha()">
+      </div>
+
+      <div class="row">
+        Resultado:
+        <span id="e7_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio8">
+    <div class="grid">
+      <div class="row">
+        <label for="e8_numeroEnLetras">Numero en letras</label>
+        <input type="text" name="" id="e8_numeroEnLetras" oninput="convertirLetrasANumeros()">
+      </div>
+
+      <div class="row">
+        Resultado:
+        <span id="e8_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio9">
+    <div class="grid">
+      <div class="row">
+        <label for="e9_radio">Radio</label>
+        <input type="text" name="" id="e9_radio" oninput="calcularCirculo()">
+      </div>
+
+      <div class="row">
+        Circunferencia: <span id="e9_circunferencia" class="success"></span>
+      </div>
+      <div class="row">
+        Área: <span id="e9_area" class="success"></span>
+      </div>
+      <div class="row">
+        Diámetro: <span id="e9_diametro" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio10">
+    <div class="grid">
+      <div class="row">
+        <label for="e10_numero">Número Arábigo</label>
+        <input type="number" name="" id="e10_numero" oninput="convertirArabigoARomano()">
+      </div>
+
+      <div class="row">
+        Resultado: <span id="e10_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio11">
+    <div class="grid">
+      <div class="row">
+        <label for="e11_numero">Número de 4 dígitos</label>
+        <input type="number" name="" id="e11_numero" oninput="redondearCentenas()">
+      </div>
+
+      <div class="row">
+        Resultado: <span id="e11_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio12">
+    <div class="grid">
+      <div class="row">
+        <label for="e12_archivo">Número de 4 dígitos</label>
+        <input type='file' accept='text/plain' id="e12_archivo" onchange='abrirArchivoFecha(event)'>
+      </div>
+
+      <div class="row">
+        Datos cargados: <textarea id="e12_cargado" class="success"></textarea>
+      </div>
+      <div class="row">
+        Resultado: <span id="e12_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio13">
+    <div class="grid">
+      <div class="row">
+        <label for="e13_a">Coeficiente a</label>
+        <input type="number" name="" id="e13_a" oninput="calcularEcuacionLineal()">
+      </div>
+      <div class="row">
+        <label for="e13_b">Coeficiente b</label>
+        <input type="number" name="" id="e13_b" oninput="calcularEcuacionLineal()">
+      </div>
+      <div class="row">
+        <label for="e13_c">Coeficiente c</label>
+        <input type="number" name="" id="e13_c" oninput="calcularEcuacionLineal()">
+      </div>
+      <div class="row">
+        <label for="e13_d">Coeficiente d</label>
+        <input type="number" name="" id="e13_d" oninput="calcularEcuacionLineal()">
+      </div>
+      <div class="row">
+        <label for="e13_e">Coeficiente e</label>
+        <input type="number" name="" id="e13_e" oninput="calcularEcuacionLineal()">
+      </div>
+      <div class="row">
+        <label for="e13_f">Coeficiente f</label>
+        <input type="number" name="" id="e13_f" oninput="calcularEcuacionLineal()">
+      </div>
+
+      <div id="e13_resultado_calculado">
+        <div class="row">
+          X =
+          <span id="e13_x" class="success"></span>
+        </div>
+        <div class="row">
+          Y =
+          <span id="e13_y" class="success"></span>
+        </div>
+      </div>
+      <div class="row oculto">
+        <span id="e13_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio14">
+    <div class="grid">
+      <div class="row">
+        <label for="e14_fecha">Seleccione un año</label>
+        <input type="month" name="" id="e14_fecha" onchange="calcularBisiesto()">
+      </div>
+
+      <div class="row">
+        Resultado: <span id="e14_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ejercicio15" class="activo">
+    <div class="grid">
+      <div class="row">
+        <label for="e15_fecha">Seleccione un mes</label>
+        <input type="month" name="" id="e15_fecha" onchange="calcularNumeroDias()">
+      </div>
+
+      <div class="row">
+        Número de días: <span id="e15_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
