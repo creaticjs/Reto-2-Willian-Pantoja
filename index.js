@@ -150,7 +150,12 @@ function convertirFormato12() {
     }
 
     let pmHora = nHora - 12;
+    if (pmHora == -12) {
+      hora = "12";
+    }
     let nuevaHora = (nHora <= 12 ? hora : (pmHora < 10 ? '0' + pmHora : pmHora));
+
+    
 
     setValue("e6_resultado", nuevaHora + dosPuntos + minutos + (nHora < 12 ? 'AM' : 'PM'));
 
@@ -380,7 +385,7 @@ function calcularEcuacionLineal() {
     return;
   }
 
-  if ((a * e - b * d) == 0 || (a * e - b * d)) {
+  if ((a * e - b * d) == 0) {
     _e("e13_resultado_calculado").hidden = true;
     _e("e13_resultado").hidden = false;
     setValue("e13_resultado", "Este valor no puede ser calculado  .");
