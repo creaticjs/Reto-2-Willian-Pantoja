@@ -423,6 +423,97 @@ function diasEnElMes(fecha) {
 /**
  * Ejercicio 16
  */
-function ejercicio16() {
+function calcularSalario() {
+  let tasa = vn("e16_tasa");
+  let horas = vn("e16_horas");
+  let horasExtra = vn("e16_horas_extra");
+  let impuesto = 0;
+  let salario = 0;
+
+  salario = horas * tasa;
+  salario += horasExtra * tasa * 0.5;
+
+  if (salario > 50000) {
+    impuesto = salario * 0.1;
+  }
+
+  salario += impuesto;
+
+  if (Number.isNaN(salario)) {
+    return;
+  }
+
+  setValue("e16_impuesto", impuesto);
+  setValue("e16_salario", salario);
+}
+
+/**
+ * Ejercicio 17
+ */
+function calcularOptimoBilletesMonedas() {
+  let datos = {
+    cantidad: vn("e17_cantidad"),
+    c100000: 0,
+    c50000: 0,
+    c20000: 0,
+    c10000: 0,
+    c5000: 0,
+    c2000: 0,
+    c1000: 0,
+    c500: 0,
+    c200: 0,
+    c100: 0,
+    c50: 0
+  };
+
+  optimizar(datos, 'c100000', 100000);
+  optimizar(datos, 'c50000', 50000);
+  optimizar(datos, 'c20000', 20000);
+  optimizar(datos, 'c10000', 10000);
+  optimizar(datos, 'c5000', 5000);
+  optimizar(datos, 'c2000', 2000);
+  optimizar(datos, 'c1000', 1000);
+  optimizar(datos, 'c500', 500);
+  optimizar(datos, 'c200', 200);
+  optimizar(datos, 'c100', 100);
+  optimizar(datos, 'c50', 50);
+
+  setValue("e17_100000", datos['c100000']);
+  setValue("e17_50000", datos['c50000']);
+  setValue("e17_20000", datos['c20000']);
+  setValue("e17_10000", datos['c10000']);
+  setValue("e17_5000", datos['c5000']);
+  setValue("e17_2000", datos['c2000']);
+  setValue("e17_1000", datos['c1000']);
+  setValue("e17_500", datos['c500']);
+  setValue("e17_200", datos['c200']);
+  setValue("e17_100", datos['c100']);
+  setValue("e17_50", datos['c50']);
+}
+
+function optimizar(datos, c, m) {
+  datos[c] = Number.parseInt(datos.cantidad / m);
+  if (datos[c] > 0) {
+    datos.cantidad -= m * datos[c];
+  }
+}
+
+/**
+ * Ejercicio 18
+ */
+function verificarNumero() {
+  let numero = vn("e18_numero");
+
+  if (!Number.isNaN(numero)) {
+    if (numero == 0) {
+      setValue("e18_resultado", "Cero")
+    } else if (numero > 0) {
+      setValue("e18_resultado", "Positivo");
+    } else {
+      setValue("e18_resultado", "Negativo");
+    }
+  } else {
+    setValue("e18_resultado", "No es un valor válido. Ingrese números.")
+  }
 
 }

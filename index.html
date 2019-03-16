@@ -8,6 +8,17 @@
   <title>Ejercicio 1</title>
   <script src="numeros.js"></script>
   <script src="index.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,7 +45,7 @@
       <li onclick="mostrarVista('ejercicio18')">Ejercicio 18</li>
     </ul>
   </header>
-  <section id="ejercicio1">
+  <section class="container" id="ejercicio1">
     <div class="grid">
       <div class="row">
         <label for="p1">Calificación 1</label>
@@ -59,7 +70,7 @@
     </div>
   </section>
 
-  <section id="ejercicio2">
+  <section class="container" id="ejercicio2">
     <div class="grid">
       <div class="row">
         <label for="e2_m1">Masa (g) cuerpo 1</label>
@@ -82,7 +93,7 @@
   </section>
 
 
-  <section id="ejercicio3">
+  <section class="container" id="ejercicio3">
     <div class="grid">
       <div class="row">
         <label for="e3_m">Masa (g)</label>
@@ -97,7 +108,7 @@
   </section>
 
 
-  <section id="ejercicio4">
+  <section class="container" id="ejercicio4">
     <div class="grid">
       <div class="row">
         <label for="e4_a">Lado a</label>
@@ -116,7 +127,7 @@
   </section>
 
 
-  <section id="ejercicio5">
+  <section class="container" id="ejercicio5">
     <div class="grid">
       <div class="row">
         <label for="e5_a">Lado a</label>
@@ -139,7 +150,7 @@
   </section>
 
 
-  <section id="ejercicio6">
+  <section class="container" id="ejercicio6">
     <div class="grid">
       <div class="row">
         <label for="e3_fecha">Hora en formato 24HH</label>
@@ -154,7 +165,7 @@
   </section>
 
 
-  <section id="ejercicio7">
+  <section class="container" id="ejercicio7">
     <div class="grid">
       <div class="row">
         <label for="e7_m">Fecha (dia, mes año)</label>
@@ -169,7 +180,7 @@
   </section>
 
 
-  <section id="ejercicio8">
+  <section class="container" id="ejercicio8">
     <div class="grid">
       <div class="row">
         <label for="e8_numeroEnLetras">Numero en letras</label>
@@ -184,7 +195,7 @@
   </section>
 
 
-  <section id="ejercicio9">
+  <section class="container" id="ejercicio9">
     <div class="grid">
       <div class="row">
         <label for="e9_radio">Radio</label>
@@ -204,7 +215,7 @@
   </section>
 
 
-  <section id="ejercicio10">
+  <section class="container" id="ejercicio10">
     <div class="grid">
       <div class="row">
         <label for="e10_numero">Número Arábigo</label>
@@ -218,7 +229,7 @@
   </section>
 
 
-  <section id="ejercicio11">
+  <section class="container" id="ejercicio11">
     <div class="grid">
       <div class="row">
         <label for="e11_numero">Número de 4 dígitos</label>
@@ -232,7 +243,7 @@
   </section>
 
 
-  <section id="ejercicio12">
+  <section class="container" id="ejercicio12">
     <div class="grid">
       <div class="row">
         <label for="e12_archivo">Número de 4 dígitos</label>
@@ -249,7 +260,7 @@
   </section>
 
 
-  <section id="ejercicio13">
+  <section class="container" id="ejercicio13">
     <div class="grid">
       <div class="row">
         <label for="e13_a">Coeficiente a</label>
@@ -293,7 +304,7 @@
   </section>
 
 
-  <section id="ejercicio14">
+  <section class="container" id="ejercicio14">
     <div class="grid">
       <div class="row">
         <label for="e14_fecha">Seleccione un año</label>
@@ -307,7 +318,7 @@
   </section>
 
 
-  <section id="ejercicio15" class="activo">
+  <section class="container" id="ejercicio15">
     <div class="grid">
       <div class="row">
         <label for="e15_fecha">Seleccione un mes</label>
@@ -316,6 +327,96 @@
 
       <div class="row">
         Número de días: <span id="e15_resultado" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container activo" id="ejercicio16">
+    <div class="grid">
+      <div class="row">
+        <label for="e16_tasa">Tasa</label>
+        <input type="number" name="" id="e16_tasa" oninput="calcularSalario()">
+      </div>
+      <div class="row">
+        <label for="e16_horas">Número de horas</label>
+        <input type="number" name="" id="e16_horas" oninput="calcularSalario()">
+      </div>
+      <div class="row">
+        <label for="e16_horas_extra">Número de horas extra</label>
+        <input type="number" name="" id="e16_horas_extra" oninput="calcularSalario()">
+      </div>
+
+      <div class="row">
+        Impuesto: <span id="e16_impuesto" class="success"></span>
+      </div>
+      <div class="row">
+        Salario semanal: <span id="e16_salario" class="success"></span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container" id="ejercicio17">
+    <div class="grid">
+      <div class="row">
+        <label for="e17_cantidad">Cantidad</label>
+        <input type="number" name="" id="e17_cantidad" oninput="calcularOptimoBilletesMonedas()">
+      </div>
+
+      <div class="grid">
+        <div class="row">
+          <div class="row">
+            Billetes de $ 100.000 <span id="e17_100000" class="success"></span>
+          </div>
+          <div class="row">
+            Billetes de $ 50.000 <span id="e17_50000" class="success"></span>
+          </div>
+          <div class="row">
+            Billetes de $ 20.000 <span id="e17_20000" class="success"></span>
+          </div>
+          <div class="row">
+            Billetes de $ 10.000 <span id="e17_10000" class="success"></span>
+          </div>
+          <div class="row">
+            Billetes de $ 5.000 <span id="e17_5000" class="success"></span>
+          </div>
+          <div class="row">
+            Billetes de $ 2.000 <span id="e17_2000" class="success"></span>
+          </div>
+          <div class="row">
+            Billetes o monedas de $ 1.000 <span id="e17_1000" class="success"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row">
+            Monedas de $ 500 <span id="e17_500" class="success"></span>
+          </div>
+          <div class="row">
+            Monedas de $ 200 <span id="e17_200" class="success"></span>
+          </div>
+          <div class="row">
+            Monedas de $ 100 <span id="e17_100" class="success"></span>
+          </div>
+          <div class="row">
+            Monedas de $ 50 <span id="e17_50" class="success"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container" id="ejercicio18">
+    <div class="grid">
+      <div class="row">
+        <label for="e18_numero">Número:</label>
+        <input type="number" name="" id="e18_numero" oninput="verificarNumero()">
+      </div>
+
+      <div class="row">
+        Resultado: <span id="e18_resultado" class="success"></span>
       </div>
     </div>
   </section>
