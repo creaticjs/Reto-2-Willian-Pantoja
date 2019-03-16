@@ -341,7 +341,6 @@ function abrirArchivoFecha() {
 
         var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay)));
 
-        resultado = diffDays;
         if (diffDays <= 365) {
           resultado = Number.parseInt(diffDays / 30) + " Meses y ";
           resultado += (diffDays - 30 * Number.parseInt(diffDays / 30)) + " Días";

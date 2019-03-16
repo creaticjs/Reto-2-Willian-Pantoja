@@ -31,7 +31,7 @@
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Ejercicios</h4>
             <ul class="list-unstyled">
-              <li onclick="mostrarVista('ejercicio1')" class="text-white"><a href="#" class="text-white">Ejercicio 1</a></li>
+              <li onclick="mostrarVista('ejercicio1')"><a href="#" class="text-white">Ejercicio 1</a></li>
               <li onclick="mostrarVista('ejercicio2')"><a href="#" class="text-white">Ejercicio 2</a></li>
               <li onclick="mostrarVista('ejercicio3')"><a href="#" class="text-white">Ejercicio 3</a></li>
               <li onclick="mostrarVista('ejercicio4')"><a href="#" class="text-white">Ejercicio 4</a></li>
@@ -85,11 +85,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio1">
-      <div class="card-header">
+      <div class="card-header d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 1</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio1" aria-expanded="false" aria-controls="imgEjercicio1"></em>
       </div>
       <div class="card-body">
         <section class="container" >
+          <img class="collapse w-100" id="imgEjercicio1" src="./img/ejercicio1.jpg" alt="Ejercicio 1"  />
           <div class="grid">
             <div class="row">
               <label for="p1">Calificación 1</label>
@@ -121,12 +123,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio2">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 2</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio2" aria-expanded="false" aria-controls="imgEjercicio2"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio2" src="./img/ejercicio2.jpg" alt="Ejercicio 2"  /> <div class="grid">
             <div class="row">
               <label for="e2_m1">Masa (g) cuerpo 1</label>
               <input class="form-control" type="number" name="" id="e2_m1" oninput="calcularFuerzaGravitacional()">
@@ -152,12 +155,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio3">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 3</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio3" aria-expanded="false" aria-controls="imgEjercicio3"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio3" src="./img/ejercicio3.jpg" alt="Ejercicio 3"  /> <div class="grid">
             <div class="row">
               <label for="e3_m">Masa (g)</label>
               <input class="form-control" type="number" name="" id="e3_m" oninput="calcularEnergia()">
@@ -175,12 +179,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio4">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 4</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio4" aria-expanded="false" aria-controls="imgEjercicio4"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio4" src="./img/ejercicio4.jpg" alt="Ejercicio 4"  /> <div class="grid">
             <div class="row">
               <label for="e4_a">Lado a</label>
               <input class="form-control" type="number" name="" id="e4_a" oninput="calcularHipotenusa()">
@@ -202,12 +207,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio5">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 5</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio5" aria-expanded="false" aria-controls="imgEjercicio5"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio5" src="./img/ejercicio5.jpg" alt="Ejercicio 5"  /> <div class="grid">
             <div class="row">
               <label for="e5_a">Lado a</label>
               <input class="form-control" type="number" name="" id="e5_a" oninput="calcularArea()">
@@ -233,12 +239,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio6">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 6</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio6" aria-expanded="false" aria-controls="imgEjercicio6"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio6" src="./img/ejercicio6.jpg" alt="Ejercicio 6"  /> <div class="grid">
             <div class="row">
               <label for="e3_fecha">Hora en formato 24HH</label>
               <input class="form-control" type="text" name="" id="e6_fecha" oninput="convertirFormato12()">
@@ -256,12 +263,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio7">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 7</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio7" aria-expanded="false" aria-controls="imgEjercicio7"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio7" src="./img/ejercicio7.jpg" alt="Ejercicio 7"  /> <div class="grid">
             <div class="row">
               <label for="e7_m">Fecha (dia, mes año)</label>
               <input class="form-control" type="text" name="" id="e7_fecha" oninput="convertirFormatoFecha()">
@@ -279,12 +287,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio8">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 8</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio8" aria-expanded="false" aria-controls="imgEjercicio8"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio8" src="./img/ejercicio8.jpg" alt="Ejercicio 8"  /> <div class="grid">
             <div class="row">
               <label for="e8_numeroEnLetras">Numero en letras</label>
               <input class="form-control" type="text" name="" id="e8_numeroEnLetras" oninput="convertirLetrasANumeros()">
@@ -302,12 +311,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio9">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 9</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio9" aria-expanded="false" aria-controls="imgEjercicio9"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio9" src="./img/ejercicio9.jpg" alt="Ejercicio 9"  /> <div class="grid">
             <div class="row">
               <label for="e9_radio">Radio</label>
               <input class="form-control" type="text" name="" id="e9_radio" oninput="calcularCirculo()">
@@ -333,12 +343,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio10">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 10</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio10" aria-expanded="false" aria-controls="imgEjercicio10"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio10" src="./img/ejercicio10.jpg" alt="Ejercicio 10"  /> <div class="grid">
             <div class="row">
               <label for="e10_numero">Número Arábigo</label>
               <input class="form-control" type="number" name="" id="e10_numero" oninput="convertirArabigoARomano()">
@@ -356,12 +367,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio11">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 11</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio11" aria-expanded="false" aria-controls="imgEjercicio11"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio11" src="./img/ejercicio11.jpg" alt="Ejercicio 11"  /> <div class="grid">
             <div class="row">
               <label for="e11_numero">Número de 4 dígitos</label>
               <input class="form-control" type="number" name="" id="e11_numero" oninput="redondearCentenas()">
@@ -379,12 +391,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio12">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 12</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio12" aria-expanded="false" aria-controls="imgEjercicio12"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio12" src="./img/ejercicio12.jpg" alt="Ejercicio 12"  /> <div class="grid">
             <div class="row">
               <label for="e12_archivo">Número de 4 dígitos</label>
               <input class="form-control" type='file' accept='text/plain' id="e12_archivo" onchange='abrirArchivoFecha(event)'>
@@ -408,12 +421,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio13">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 13</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio13" aria-expanded="false" aria-controls="imgEjercicio13"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio13" src="./img/ejercicio13.jpg" alt="Ejercicio 13"  /> <div class="grid">
             <div class="row">
               <label for="e13_a">Coeficiente a</label>
               <input class="form-control" type="number" name="" id="e13_a" oninput="calcularEcuacionLineal()">
@@ -463,12 +477,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio14">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 14</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio14" aria-expanded="false" aria-controls="imgEjercicio14"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio14" src="./img/ejercicio14.jpg" alt="Ejercicio 14"  /> <div class="grid">
             <div class="row">
               <label for="e14_fecha">Seleccione un año</label>
               <input class="form-control" type="month" name="" id="e14_fecha" onchange="calcularBisiesto()">
@@ -487,12 +502,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio15">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 15</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio15" aria-expanded="false" aria-controls="imgEjercicio15"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio15" src="./img/ejercicio15.jpg" alt="Ejercicio 15"  /> <div class="grid">
             <div class="row">
               <label for="e15_fecha">Seleccione un mes</label>
               <input class="form-control" type="month" name="" id="e15_fecha" onchange="calcularNumeroDias()">
@@ -511,12 +527,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio16">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 16</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio16" aria-expanded="false" aria-controls="imgEjercicio16"></em>
       </div>
       <div class="card-body">
         <section class="container activo" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio16" src="./img/ejercicio16.jpg" alt="Ejercicio 16"  /> <div class="grid">
             <div class="row">
               <label for="e16_tasa">Tasa</label>
               <input class="form-control" type="number" name="" id="e16_tasa" oninput="calcularSalario()">
@@ -547,12 +564,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio17">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 17</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio17" aria-expanded="false" aria-controls="imgEjercicio17"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio17" src="./img/ejercicio17.jpg" alt="Ejercicio 17"  /> <div class="grid">
             <div class="row">
               <label for="e17_cantidad">Cantidad</label>
               <input class="form-control" type="number" name="" id="e17_cantidad" oninput="calcularOptimoBilletesMonedas()">
@@ -612,12 +630,13 @@
     </div>
 
     <div class="card mb-4 box-shadow collapse" id="ejercicio18">
-      <div class="card-header">
+      <div class="card-header  d-flex justify-content-between">
         <h4 class="my-0 font-weight-normal">Ejercicio 18</h4>
+        <em class="fas fa-file-alt" style="font-size: 32px;" data-toggle="collapse" data-target="#imgEjercicio18" aria-expanded="false" aria-controls="imgEjercicio1"></em>
       </div>
       <div class="card-body">
         <section class="container" >
-          <div class="grid">
+          <img class="collapse w-100" id="imgEjercicio18" src="./img/ejercicio18.jpg" alt="Ejercicio 18"  /> <div class="grid">
             <div class="row">
               <label for="e18_numero">Número:</label>
               <input class="form-control" type="number" name="" id="e18_numero" oninput="verificarNumero()">
